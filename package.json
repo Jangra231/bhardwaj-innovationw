@@ -1,0 +1,34 @@
+{
+  "name": "bhardwaj-innovations",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^12.42.2",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.546.0",
+    "mongoose": "^9.7.4",
+    "motion": "^12.23.24",
+    "next": "16.2.10",
+    "nodemailer": "^6.10.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-leaflet": "^5.0.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^22.14.0",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2"
+  }
+}
