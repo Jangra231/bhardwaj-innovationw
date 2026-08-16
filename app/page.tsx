@@ -28,7 +28,10 @@ const renderIcon = (name: string, className = "h-6 w-6 text-sky-500") => {
   return <IconComponent className={className} />;
 };
 
-type HomeCarouselItem = { type: "product"; item: (typeof PRODUCTS_DATA)[number] };
+type HomeCarouselItem = {
+  type: "product";
+  item: (typeof PRODUCTS_DATA)[number];
+};
 
 const HOME_CAROUSEL_ITEMS: HomeCarouselItem[] = PRODUCTS_DATA.map((item) => ({
   type: "product",
@@ -213,7 +216,10 @@ const LogoMarquee = () => {
         </p>
       </div>
 
-      <div className="flex animate-scroll">
+      <div
+        className="flex w-max min-w-max transform-gpu animate-scroll motion-safe:will-change-transform motion-reduce:animate-none"
+        style={{ animationDuration: "20s" }}
+      >
         {[...logos, ...logos, ...logos].map((logo, idx) => (
           <div
             key={idx}
@@ -665,7 +671,6 @@ export default function HomePage() {
                 ref={(video) => {
                   if (video) video.playbackRate = 0.6;
                 }}
-               
                 className="w-full h-full object-cover p-1.5 rounded-2xl"
               >
                 <source src="/media/platform-showcase.mp4" type="video/mp4" />
