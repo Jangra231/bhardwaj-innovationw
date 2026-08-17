@@ -49,7 +49,7 @@ export default function ContactPage() {
               </h2>
               <p className="text-slate-600 font-light text-sm md:text-base leading-relaxed">
                 Connect directly with our corporate operations group or visit
-                our research center in Chandigarh.
+                our research center in Hisar.
               </p>
             </div>
 
@@ -65,9 +65,9 @@ export default function ContactPage() {
                   <p className="text-slate-600 text-sm mt-1 leading-relaxed">
                     Bhardwaj Innovations
                     <br />
-                    H-28, Surajpur Industrial Area, Phase 1,
+                    2/3, Shankar Market,
                     <br />
-                    Noida, India - 201306
+                    Hisar, Haryana - 125001
                   </p>
                 </div>
               </div>
@@ -82,10 +82,10 @@ export default function ContactPage() {
                   </h4>
                   <p className="text-slate-600 text-sm mt-1 leading-relaxed">
                     <a
-                      href="tel:+919876543210"
+                      href="tel:+917494842594"
                       className="hover:text-sky-600 transition-colors"
                     >
-                      +91 98765 43210
+                      +91 74948 42594
                     </a>
                   </p>
                 </div>
@@ -101,10 +101,10 @@ export default function ContactPage() {
                   </h4>
                   <p className="text-slate-600 text-sm mt-1 leading-relaxed">
                     <a
-                      href="mailto:contact@bhardwajinnovations.com"
+                      href="mailto:support@bhardwajinnovations.com"
                       className="hover:text-sky-600 transition-colors"
                     >
-                      contact@bhardwajinnovations.com
+                      support@bhardwajinnovations.com
                     </a>
                   </p>
                 </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
               <div className="relative h-64 w-full bg-slate-900 rounded-xl overflow-hidden border border-none flex items-center justify-center">
                 <div className="absolute inset-0 overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps?q=H-28%2C%20Surajpur%20Industrial%20Area%2C%20Greater%20Noida%2C%20Uttar%20Pradesh&output=embed"
+                    src="https://www.google.com/maps?q=Shankar+Market,+City+Thana+Road,+Hisar,+Haryana+125001&output=embed"
                     className="absolute inset-0 w-full h-full border-0"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
@@ -164,11 +164,11 @@ export default function ContactPage() {
                 Send Us A Message
               </h3>
               <p className="text-xs text-slate-500 leading-relaxed font-light">
-                Fill out our secure enquiry form. Your enquiry is saved to MongoDB Atlas first, then routed through the company SMTP mailbox so our team can respond quickly.
+                Fill out the enquiry form to connect with our team at ease.
               </p>
             </div>
 
-            <Suspense
+            <Suspense 
               fallback={
                 <div className="flex items-center justify-center py-12 text-slate-400 text-sm">
                   <Lucide.Loader2 className="h-5 w-5 animate-spin mr-2" />

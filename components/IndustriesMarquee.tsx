@@ -12,6 +12,11 @@ const industries = [
     logo: "/media/industry-logos/government-of-india.png",
   },
   {
+name: "Logistics Corporation",
+logoName: "truck",
+logo: "/media/industry-logos/truck.jpg",
+  },
+  {
     name: "NCCF",
     logoName: "NCCF",
     logo: "/media/industry-logos/nccf.png",
@@ -19,6 +24,12 @@ const industries = [
   {
     name: "Food & Supply",
     logoName: "Food & Supply",
+    logo: "/media/industry-logos/government-of-india.png",
+  },
+
+  {
+    name: "Govt. Organizations",
+    logoName: "Govt. Organizations",
     logo: "/media/industry-logos/government-of-india.png",
   },
 

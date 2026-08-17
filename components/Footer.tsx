@@ -9,7 +9,7 @@ export default function Footer() {
   const quickLinks = [
     { label: "Home Dashboard", href: "/" },
     { label: "Company Story", href: "/about" },
-    { label: "All Hardware Accessories", href: "/products" },
+    { label: "Hardware Accessories", href: "/products" },
     { label: "Software Solutions", href: "/software" },
     { label: "Contact Operations", href: "/contact" },
   ];
@@ -126,9 +126,9 @@ export default function Footer() {
             >
               Bhardwaj Innovations
               <br />
-              H-28,Surajpur Industrial Area, Phase 1,
+              2/3,Shankar Market,
               <br />
-              Noida, India - 201306
+              Hisar, Haryana - 125001
             </a>
           </p>
           <p className="flex items-center gap-2.5">

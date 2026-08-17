@@ -192,51 +192,51 @@ const FloatingParticles = () => {
 };
 
 // --- Auto-scrolling Logo Marquee ---
-const LogoMarquee = () => {
-  const logos = [
-    { name: "Government Transit", icon: "Bus" },
-    { name: "Logistics Corp", icon: "Truck" },
-    { name: "Fleet Solutions", icon: "Navigation" },
-    { name: "Safety First", icon: "Shield" },
-    { name: "Smart Energy", icon: "Zap" },
-    { name: "Track Pro", icon: "MapPin" },
-    { name: "Cargo Systems", icon: "Package" },
-    { name: "EV Networks", icon: "Battery" },
-  ];
+// const LogoMarquee = () => {
+//   const logos = [
+//     { name: "Government Transit", icon: "Bus" },
+//     { name: "Logistics Corp", icon: "Truck" },
+//     { name: "Fleet Solutions", icon: "Navigation" },
+//     { name: "Safety First", icon: "Shield" },
+//     { name: "Smart Energy", icon: "Zap" },
+//     { name: "Track Pro", icon: "MapPin" },
+//     { name: "Cargo Systems", icon: "Package" },
+//     { name: "EV Networks", icon: "Battery" },
+//   ];
 
-  return (
-    <div className="relative py-12 bg-white overflow-hidden border-y border-slate-100">
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r from-white to-transparent z-10"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-linear-to-l from-white to-transparent z-10"></div>
+//   return (
+//     <div className="relative py-12 bg-white overflow-hidden border-y border-slate-100">
+//       <div className="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r from-white to-transparent z-10"></div>
+//       <div className="absolute right-0 top-0 bottom-0 w-24 bg-linear-to-l from-white to-transparent z-10"></div>
 
-      <div className="max-w-7xl mx-auto px-6 mb-8">
-        <p className="text-center text-sm text-slate-500 font-medium">
-          Trusted by <span className="text-sky-600 font-bold">500+</span>{" "}
-          enterprise clients across India
-        </p>
-      </div>
+//       <div className="max-w-7xl mx-auto px-6 mb-8">
+//         <p className="text-center text-sm text-slate-500 font-medium">
+//           Trusted by <span className="text-sky-600 font-bold">500+</span>{" "}
+//           enterprise clients across India
+//         </p>
+//       </div>
 
-      <div
-        className="flex w-max min-w-max transform-gpu animate-scroll motion-safe:will-change-transform motion-reduce:animate-none"
-        style={{ animationDuration: "20s" }}
-      >
-        {[...logos, ...logos, ...logos].map((logo, idx) => (
-          <div
-            key={idx}
-            className="shrink-0 mx-8 flex items-center gap-3 px-6 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:border-sky-200 hover:shadow-md transition-all duration-300 cursor-default group"
-          >
-            <div className="p-2 bg-sky-50 rounded-lg text-sky-600 group-hover:bg-sky-100 transition-colors">
-              {renderIcon(logo.icon, "h-5 w-5")}
-            </div>
-            <span className="text-xs font-semibold text-slate-600 whitespace-nowrap">
-              {logo.name}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+//       <div
+//         className="flex w-max min-w-max transform-gpu animate-scroll motion-safe:will-change-transform motion-reduce:animate-none"
+//         style={{ animationDuration: "20s" }}
+//       >
+//         {[...logos, ...logos, ...logos].map((logo, idx) => (
+//           <div
+//             key={idx}
+//             className="shrink-0 mx-8 flex items-center gap-3 px-6 py-3 bg-slate-50 rounded-xl border border-slate-100 hover:border-sky-200 hover:shadow-md transition-all duration-300 cursor-default group"
+//           >
+//             <div className="p-2 bg-sky-50 rounded-lg text-sky-600 group-hover:bg-sky-100 transition-colors">
+//               {renderIcon(logo.icon, "h-5 w-5")}
+//             </div>
+//             <span className="text-xs font-semibold text-slate-600 whitespace-nowrap">
+//               {logo.name}
+//             </span>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
 
 // --- Video Background Component ---
 const VideoBackground = ({
@@ -644,7 +644,7 @@ export default function HomePage() {
       <UnifiedOperationsConsole />
 
       {/* Logo Marquee */}
-      <LogoMarquee />
+      {/* <LogoMarquee /> */}
 
       {/* 3. ACCESSIBLE SERVICES & PRODUCTS SECTION */}
       <AccessibleProductsSection />
