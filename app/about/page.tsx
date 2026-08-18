@@ -17,7 +17,9 @@ const renderIcon = (name: string, className = "h-6 w-6 text-sky-500") => {
 };
 
 export default function AboutPage() {
-  const [activePurpose, setActivePurpose] = useState<"mission" | "vision">("mission");
+  const [activePurpose, setActivePurpose] = useState<"mission" | "vision">(
+    "mission",
+  );
 
   const purposeContent = {
     mission: {
@@ -25,23 +27,24 @@ export default function AboutPage() {
       title: "Engineering clarity into every operation.",
       description:
         "We empower organizations with intelligent technology that improves safety, operational efficiency, and long-term value.",
-      points: ["Protect people, assets, and cargo", "Turn live data into confident action", "Deliver reliable field-to-cloud support"],
+      points: [
+        "Protect people, assets, and cargo",
+        "Turn live data into confident action",
+        "Deliver reliable field-to-cloud support",
+      ],
     },
     vision: {
       eyebrow: "Our Vision",
       title: "A smarter, safer connected supply chain.",
       description:
         "We aim to be the trusted technology partner for transport and logistics organizations building more visible, resilient, and connected operations.",
-      points: ["Lead with practical IoT innovation", "Enable safer transport at every scale", "Make connected operations easier to manage"],
+      points: [
+        "Lead with practical IoT innovation",
+        "Enable safer transport at every scale",
+        "Make connected operations easier to manage",
+      ],
     },
   };
-
-  const achievements = [
-    { count: "10K+", label: "Active Tracking Nodes", icon: "Satellite" },
-    { count: "15+", label: "National Compliance Certs", icon: "Award" },
-    { count: "99.9%", label: "Real-time Telemetry Uptime", icon: "Activity" },
-    { count: "50M+", label: "Kilometers Monitored", icon: "MapPinned" },
-  ];
 
   const coreValues = [
     {
@@ -76,37 +79,22 @@ export default function AboutPage() {
     },
   ];
 
-
-  const whoWeAre = {
-    label: "Who We Are",
-    title: "Bridging Physical Products with Digital Intelligence",
-    description: [
-      "Bhardwaj Innovations specializes in designing, manufacturing, and developing technology solutions for the transport and logistics sector. We create IoT-enabled hardware products, logistics security devices, and custom software platforms that help businesses monitor, manage, and optimize their operations in real time.",
-
-      "Our expertise lies in bridging physical products with digital intelligence, enabling logistics companies to achieve greater transparency, automation, and operational excellence.",
-    ],
-    highlights: [
-      "IoT-Enabled Hardware Solutions",
-      "Logistics Security Devices",
-      "Custom Software Platforms",
-      "Real-Time Operational Visibility",
-    ],
-  };
-
   const teamMembers = [
     {
-      name: "Sh. Shiv Shankar ",
+      name: "Shiv Shankar ",
       role: "CEO & Founder",
       bio: "Guiding the company’s purpose, long-term relationships, and responsible growth across connected operations.",
       icon: "Crown",
       gradient: "from-amber-500 to-orange-600",
+      image: "/media/leadership/leadership.png",
     },
     {
       name: "Amit Bhardwaj",
-      role: "Managing Director",
+      role: "MD",
       bio: "Leading product strategy and the transformation of field telemetry into dependable business outcomes.",
       icon: "BriefcaseBusiness",
       gradient: "from-sky-500 to-blue-600",
+      image: "/media/leadership/leadership.png",
     },
     {
       name: "Ankit Sharma",
@@ -114,15 +102,16 @@ export default function AboutPage() {
       bio: "Building disciplined financial systems that support sustainable delivery, compliance, and customer trust.",
       icon: "ChartNoAxesCombined",
       gradient: "from-emerald-500 to-teal-600",
+      image: "/media/leadership/leadership.png",
     },
     {
       name: "Vikas Bhardwaj",
-      role: "Technical Head",
+      role: "Tech Consultant",
       bio: "Driving embedded systems, telemetry architecture, secure integrations, and reliable product engineering.",
       icon: "Cpu",
       gradient: "from-indigo-500 to-violet-600",
-     
-      image: "", // Add a photo path such as /media/leadership/vikas-bhardwaj.jpg
+
+      image: "/media/leadership/leadership.png", // Add a photo path such as /media/leadership/vikas-bhardwaj.jpg
     },
     {
       name: "Operations Leadership",
@@ -130,12 +119,10 @@ export default function AboutPage() {
       bio: "Connecting deployments, support, compliance, and customer teams so every solution works in the field.",
       icon: "UsersRound",
       gradient: "from-rose-500 to-pink-600",
-      
-      image: "", // Add a photo path such as /media/leadership/operations-leadership.jpg
+
+      image: "/media/leadership/leadership.png", // Add a photo path such as /media/leadership/operations-leadership.jpg
     },
   ];
-
-  
 
   return (
     <div className="relative">
@@ -414,7 +401,12 @@ export default function AboutPage() {
           {/* Video/Image with overlay */}
           <div className="relative">
             <div className="relative h-120 w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
-              <video
+              <img
+                src="/media/our-story.jpeg"
+                alt="Track everything"
+                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+              />
+              {/* <video
                 autoPlay
                 muted
                 loop
@@ -422,7 +414,7 @@ export default function AboutPage() {
                 className="w-full h-full object-cover"
               >
                 <source src="/media/track-fleet.mp4" type="video/mp4" />
-              </video>
+              </video> */}
               <div className="absolute inset-0 bg-linear-to-t from-slate-950/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="flex items-center gap-3 px-4 py-3 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
@@ -484,7 +476,11 @@ export default function AboutPage() {
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
               The direction behind every deployment.
             </h2>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-1" role="tablist" aria-label="Mission and vision">
+            <div
+              className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-1"
+              role="tablist"
+              aria-label="Mission and vision"
+            >
               <button
                 type="button"
                 role="tab"
@@ -496,14 +492,22 @@ export default function AboutPage() {
                     : "border-white/20 bg-white/10 text-white hover:border-sky-200 hover:bg-white/15"
                 }`}
               >
-                <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${activePurpose === "mission" ? "bg-sky-100 text-sky-700" : "bg-white/10 text-sky-200"}`}>
+                <span
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${activePurpose === "mission" ? "bg-sky-100 text-sky-700" : "bg-white/10 text-sky-200"}`}
+                >
                   <Lucide.Target className="h-5 w-5" />
                 </span>
                 <span>
                   <span className="block text-sm font-bold">Our Mission</span>
-                  <span className={`mt-1 block text-xs ${activePurpose === "mission" ? "text-slate-500" : "text-sky-100"}`}>What we deliver every day</span>
+                  <span
+                    className={`mt-1 block text-xs ${activePurpose === "mission" ? "text-slate-500" : "text-sky-100"}`}
+                  >
+                    What we deliver every day
+                  </span>
                 </span>
-                <Lucide.ArrowRight className={`ml-auto h-4 w-4 transition-transform ${activePurpose === "mission" ? "translate-x-1 text-sky-600" : "text-sky-200 group-hover:translate-x-1"}`} />
+                <Lucide.ArrowRight
+                  className={`ml-auto h-4 w-4 transition-transform ${activePurpose === "mission" ? "translate-x-1 text-sky-600" : "text-sky-200 group-hover:translate-x-1"}`}
+                />
               </button>
 
               <button
@@ -517,14 +521,22 @@ export default function AboutPage() {
                     : "border-white/20 bg-white/10 text-white hover:border-sky-200 hover:bg-white/15"
                 }`}
               >
-                <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${activePurpose === "vision" ? "bg-sky-100 text-sky-700" : "bg-white/10 text-sky-200"}`}>
+                <span
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${activePurpose === "vision" ? "bg-sky-100 text-sky-700" : "bg-white/10 text-sky-200"}`}
+                >
                   <Lucide.Eye className="h-5 w-5" />
                 </span>
                 <span>
                   <span className="block text-sm font-bold">Our Vision</span>
-                  <span className={`mt-1 block text-xs ${activePurpose === "vision" ? "text-slate-500" : "text-sky-100"}`}>Where we are heading</span>
+                  <span
+                    className={`mt-1 block text-xs ${activePurpose === "vision" ? "text-slate-500" : "text-sky-100"}`}
+                  >
+                    Where we are heading
+                  </span>
                 </span>
-                <Lucide.ArrowRight className={`ml-auto h-4 w-4 transition-transform ${activePurpose === "vision" ? "translate-x-1 text-sky-600" : "text-sky-200 group-hover:translate-x-1"}`} />
+                <Lucide.ArrowRight
+                  className={`ml-auto h-4 w-4 transition-transform ${activePurpose === "vision" ? "translate-x-1 text-sky-600" : "text-sky-200 group-hover:translate-x-1"}`}
+                />
               </button>
             </div>
           </div>
@@ -539,7 +551,11 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-3 text-sky-200">
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-400/15">
-                {activePurpose === "mission" ? <Lucide.Target className="h-5 w-5" /> : <Lucide.Eye className="h-5 w-5" />}
+                {activePurpose === "mission" ? (
+                  <Lucide.Target className="h-5 w-5" />
+                ) : (
+                  <Lucide.Eye className="h-5 w-5" />
+                )}
               </span>
               <span className="text-xs font-bold uppercase tracking-widest">
                 {purposeContent[activePurpose].eyebrow}
@@ -553,7 +569,10 @@ export default function AboutPage() {
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {purposeContent[activePurpose].points.map((point) => (
-                <div key={point} className="rounded-2xl border border-white/15 bg-slate-950/20 p-4 text-sm font-medium leading-relaxed text-white">
+                <div
+                  key={point}
+                  className="rounded-2xl border border-white/15 bg-slate-950/20 p-4 text-sm font-medium leading-relaxed text-white"
+                >
                   <Lucide.CheckCircle2 className="mb-3 h-5 w-5 text-sky-300" />
                   {point}
                 </div>
@@ -597,7 +616,6 @@ export default function AboutPage() {
                       />
                     ) : (
                       <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-linear-to-br from-slate-100 via-white to-sky-50">
-                        
                         <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
                           Add leadership photo
                         </span>
@@ -621,8 +639,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-
 
       {/* CORE VALUES with GIF Animation */}
       <section className="border-y border-slate-800 bg-slate-950 py-24 text-white">
@@ -654,9 +670,7 @@ export default function AboutPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-800 bg-slate-950 p-3 text-sky-300 shadow-sm transition-all group-hover:scale-110 group-hover:border-sky-500 group-hover:bg-sky-500/30">
                   {renderIcon(val.icon)}
                 </div>
-                <h4 className="text-lg font-bold text-white">
-                  {val.title}
-                </h4>
+                <h4 className="text-lg font-bold text-white">{val.title}</h4>
                 <p className="text-xs leading-relaxed text-slate-400">
                   {val.desc}
                 </p>
@@ -665,8 +679,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-
 
       {/* WHY CHOOSE US */}
       <section className="py-24 bg-white overflow-hidden">
@@ -836,7 +848,7 @@ export default function AboutPage() {
               {[
                 {
                   icon: "Award",
-                  title: "10+ Years Experience",
+                  title: "2+ Years Experience",
                   desc: "Deep mastery in telemetry algorithms, custom PCB integration, and regulatory transport mandates.",
                   color: "sky",
                 },
@@ -884,7 +896,7 @@ export default function AboutPage() {
                 </motion.div>
               ))}
 
-              {/* Animated stats bar */}
+              {/* Animated stats bar
               <div className="bg-linear-to-r from-slate-900 to-slate-800 rounded-2xl p-6 shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
@@ -912,15 +924,14 @@ export default function AboutPage() {
                     <p className="text-xs text-slate-400 mt-1">Support Hours</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
       </section>
 
-
       {/* CTA Section with Video */}
-      <section className="relative py-10 bg-slate-950 text-white overflow-hidden">
+      {/* <section className="relative py-10 bg-slate-950 text-white overflow-hidden">
         
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
@@ -947,7 +958,7 @@ export default function AboutPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

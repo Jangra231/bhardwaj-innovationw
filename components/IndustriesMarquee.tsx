@@ -2,6 +2,11 @@
 
 const industries = [
   {
+    name: "Govt. Organizations",
+    logoName: "Govt. Organizations",
+    logo: "/media/industry-logos/government-of-india.png",
+  },
+  {
     name: "NAFED",
     logoName: "NAFED",
     logo: "/media/industry-logos/nafed.png",
@@ -10,11 +15,6 @@ const industries = [
     name: "FCI",
     logoName: "FCI",
     logo: "/media/industry-logos/government-of-india.png",
-  },
-  {
-name: "Logistics Corporation",
-logoName: "truck",
-logo: "/media/industry-logos/truck.jpg",
   },
   {
     name: "NCCF",
@@ -26,13 +26,31 @@ logo: "/media/industry-logos/truck.jpg",
     logoName: "Food & Supply",
     logo: "/media/industry-logos/government-of-india.png",
   },
-
   {
-    name: "Govt. Organizations",
-    logoName: "Govt. Organizations",
-    logo: "/media/industry-logos/government-of-india.png",
+    name: "Energy Sector",
+    logoName: "Energy Sector",
+    logo: "/media/industry-logos/energy-sector.jpg",
   },
-
+  {
+    name: "GK Minda",
+    logoName: "GK Minda",
+    logo: "/media/industry-logos/gk-minda.png",
+  },
+  {
+    name: "World Victory",
+    logoName: "World Victory",
+    logo: "/media/industry-logos/world-victory.png",
+  },
+  {
+    name: "Minato Energy",
+    logoName: "Minato Energy",
+    logo: "/media/industry-logos/minato-energy.png",
+  },
+  {
+    name: "Logistics Industry",
+    logoName: "truck",
+    logo: "/media/industry-logos/truck.jpg",
+  },
   {
     name: "CJ Darcl Transport",
     logoName: "CJ Darcl Transport",
@@ -53,22 +71,7 @@ logo: "/media/industry-logos/truck.jpg",
     logoName: "South East Transport",
     logo: "/media/industry-logos/south-east-transport.png",
   },
-
-  {
-    name: "GK Minda",
-    logoName: "GK Minda",
-    logo: "/media/industry-logos/gk-minda.png",
-  },
-  {
-    name: "World Victory",
-    logoName: "World Victory",
-    logo: "/media/industry-logos/world-victory.png",
-  },
-  {
-    name: "Minato Energy",
-    logoName: "Minato Energy",
-    logo: "/media/industry-logos/minato-energy.png",
-  },
+  
 ] as const;
 
 export default function IndustriesMarquee() {

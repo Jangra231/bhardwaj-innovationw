@@ -67,8 +67,8 @@ export const UNIQUE_PRODUCT_MEDIA: Record<string, string[]> = {
     "/media/products-fresh/gps-digital-lock-valuable-transport-8.webp",
   ],
   "iot-hardware-ev-vehicles-batteries": [
-    "/media/products-fresh/iot-hardware-ev-vehicles-batteries-1.jpg",
     "/media/products-fresh/iot-hardware-ev-vehicles-batteries-2.jpg",
+    "/media/products-fresh/iot-hardware-ev-vehicles-batteries-1.jpg",
     "/media/products-fresh/iot-hardware-ev-vehicles-batteries-3.jpg",
     "/media/products-fresh/iot-hardware-ev-vehicles-batteries-4.jpg",
     "/media/products-fresh/iot-hardware-ev-vehicles-batteries-6.png",

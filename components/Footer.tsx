@@ -19,7 +19,7 @@ export default function Footer() {
   ];
 
   const softwareProducts = [
-    { label: "All Software Products", href: "/software" },
+    { label: "Software Solutions", href: "/software" },
   ];
 
   return (

@@ -1,44 +1,6 @@
 import { ProductDetail } from "../types";
 export const SOFTWARE_DATA: ProductDetail[] = [
   {
-    id: "fleet-management-dashboard",
-    category: "Software",
-    title: "Fleet Management Dashboard",
-    shortDesc:
-      "Comprehensive web-based platform for real-time fleet monitoring and advanced analytics.",
-    longDesc:
-      "Our Fleet Management Dashboard provides a centralized command center for your entire logistics operation. Featuring real-time location tracking, route optimization algorithms, and automated maintenance scheduling, it empowers managers to maximize efficiency and reduce operational costs.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    gifUrl: "/media/dashboard-tracking.gif",
-    videoUrl: "/media/realtime-tracking.mp4",
-    gallery: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
-    ],
-    features: [
-      "Real-time GPS map visualization",
-      "Automated route optimization",
-      "Fuel consumption analytics",
-      "Driver behavior monitoring",
-      "Customizable alert system",
-    ],
-    specifications: {
-      Platform: "Web-based (Responsive)",
-      "Update Interval": "As low as 5 seconds",
-      "Data Retention": "Up to 2 years",
-      Integration: "REST API & Webhooks",
-      Security: "SSL/TLS Encryption",
-    },
-    applications: [
-      "Logistics & Distribution",
-      "Public Transportation",
-      "Emergency Services",
-      "Corporate Car Pools",
-    ],
-  },
-
-  {
     id: "bizeye-fleet-employee-asset-tracking",
     category: "Software",
     title: "BIZEYE – Fleet, Employee & Asset Tracking Software",
@@ -106,6 +68,43 @@ export const SOFTWARE_DATA: ProductDetail[] = [
       "Construction & Industrial Operations",
       "Supply Chain Management",
       "Enterprise Resource Monitoring",
+    ],
+  },
+  {
+    id: "fleet-management-dashboard",
+    category: "Software",
+    title: "Fleet Management Dashboard",
+    shortDesc:
+      "Comprehensive web-based platform for real-time fleet monitoring and advanced analytics.",
+    longDesc:
+      "Our Fleet Management Dashboard provides a centralized command center for your entire logistics operation. Featuring real-time location tracking, route optimization algorithms, and automated maintenance scheduling, it empowers managers to maximize efficiency and reduce operational costs.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    gifUrl: "/media/dashboard-tracking.gif",
+    videoUrl: "/media/realtime-tracking.mp4",
+    gallery: [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
+    ],
+    features: [
+      "Real-time GPS map visualization",
+      "Automated route optimization",
+      "Fuel consumption analytics",
+      "Driver behavior monitoring",
+      "Customizable alert system",
+    ],
+    specifications: {
+      Platform: "Web-based (Responsive)",
+      "Update Interval": "As low as 5 seconds",
+      "Data Retention": "Up to 2 years",
+      Integration: "REST API & Webhooks",
+      Security: "SSL/TLS Encryption",
+    },
+    applications: [
+      "Logistics & Distribution",
+      "Public Transportation",
+      "Emergency Services",
+      "Corporate Car Pools",
     ],
   },
 
@@ -177,7 +176,147 @@ export const SOFTWARE_DATA: ProductDetail[] = [
       "Smart Mobility Solutions",
     ],
   },
+   {
+    id: "saphal-agri-procurement-handling-logistics",
+    category: "Software",
+    title:
+      "SAPHAL -Software For Agri-Procurement, Handling & Logistics",
 
+    shortDesc:
+      "Integrated software solution designed to streamline agricultural procurement, handling, inventory, logistics, and supply chain operations through centralized digital management.",
+
+    longDesc:
+      "SAPHAL is an integrated software solution designed to support agricultural procurement, handling, storage, inventory, and logistics operations through a centralized digital platform. The system helps organizations manage procurement activities, monitor material movement, coordinate handling and transportation operations, maintain digital records, and gain better visibility across the agricultural supply chain. By connecting procurement, handling, logistics, and operational workflows, SAPHAL helps improve transparency, coordination, process efficiency, and data-driven decision-making.",
+
+    image:
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1000",
+
+    gifUrl: "/media/saphal-agri-management.gif",
+
+    videoUrl: "/media/saphal-logistics.mp4",
+
+    gallery: [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000",
+    ],
+
+    features: [
+      "Digital agricultural procurement management",
+      "Procurement workflow and activity monitoring",
+      "Farmer, supplier, and procurement center data management",
+      "Procurement quantity and transaction tracking",
+      "Material handling and movement monitoring",
+      "Inventory and stock visibility",
+      "Warehouse and storage operation management",
+      "Transportation and logistics coordination",
+      "Real-time supply chain visibility",
+      "Vehicle and dispatch tracking",
+      "Digital documentation and record management",
+      "Centralized operational dashboard",
+      "Reports and analytics for informed decision-making",
+      "Improved transparency across procurement and logistics operations",
+      "Streamlined coordination between procurement, handling, storage, and transportation activities",
+    ],
+
+    specifications: {
+      Platform:
+        "Web-Based Agricultural Procurement & Logistics Management Platform",
+      Procurement: "Digital Procurement Workflow and Transaction Management",
+      Handling: "Material Handling and Movement Monitoring",
+      Inventory: "Stock and Inventory Visibility",
+      Storage: "Warehouse and Storage Operations Management",
+      Logistics: "Transportation and Dispatch Coordination",
+      Tracking: "Real-Time Operational and Supply Chain Monitoring",
+      Documentation: "Centralized Digital Records and Documentation",
+      Reporting: "Procurement, Inventory and Logistics Reports",
+      Analytics: "Operational Data and Performance Analytics",
+      Dashboard: "Centralized Management Dashboard",
+      Application: "Agricultural Procurement, Handling, Storage and Logistics",
+    },
+
+    applications: [
+      "Agricultural Procurement",
+      "Food Grain Procurement",
+      "Procurement Centers",
+      "Warehousing & Storage",
+      "Inventory Management",
+      "Agricultural Supply Chain",
+      "Logistics & Transportation",
+      "Material Handling Operations",
+      "Food Distribution Operations",
+      "Government & Cooperative Procurement Operations",
+    ],
+  },
+  {
+    id: "workflow-tracker-operational-tracking",
+    category: "Software",
+    title: "Workflow Tracker - Automated Operational Tracking Software",
+
+    shortDesc:
+      "Automated digital platform designed to track, monitor, and manage operational workflows, activities, and processes through centralized real-time visibility.",
+
+    longDesc:
+      "Workflow Tracker is an automated digital platform designed to provide end-to-end visibility into operational workflows and business processes. The platform helps organizations digitally trace activities, monitor process progress, track operational records, and improve coordination across different stages of a workflow. By replacing fragmented manual tracking with centralized digital monitoring, Workflow Tracer enables organizations to improve transparency, operational control, accountability, and data-driven decision-making.",
+
+    image:
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000",
+
+    gifUrl: "/media/workflow-tracer.gif",
+
+    videoUrl: "/media/workflow-tracer-demo.mp4",
+
+    gallery: [
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    ],
+
+    features: [
+      "Automated digital workflow tracing",
+      "End-to-end operational process monitoring",
+      "Real-time workflow status visibility",
+      "Centralized tracking of operational activities",
+      "Digital record and transaction management",
+      "Process-wise activity monitoring",
+      "Task and workflow progress tracking",
+      "Automated status updates and notifications",
+      "Improved operational transparency and accountability",
+      "Centralized dashboard for workflow monitoring",
+      "Reports and analytics for operational insights",
+      "Historical workflow and activity records",
+      "Reduced dependency on manual tracking and reporting",
+      "Improved coordination between teams and operational stakeholders",
+      "Data-driven decision-making and operational control",
+    ],
+
+    specifications: {
+      Platform: "Web-Based Digital Workflow Tracking Platform",
+      "Workflow Tracking": "Automated End-to-End Operational Tracing",
+      Monitoring: "Real-Time Workflow and Activity Monitoring",
+      "Process Management": "Digital Process and Workflow Management",
+      Records: "Centralized Digital Records and Activity History",
+      Dashboard: "Centralized Operational Monitoring Dashboard",
+      Notifications: "Automated Status Updates and Alerts",
+      Reporting: "Workflow and Operational Performance Reports",
+      Analytics: "Process and Activity-Based Operational Analytics",
+      Visibility: "End-to-End Operational Process Visibility",
+      Application: "Business Workflows, Operations and Process Tracking",
+    },
+
+    applications: [
+      "Government & Public Sector Operations",
+      "Agricultural Procurement Operations",
+      "Supply Chain & Logistics",
+      "Food Grain Operations",
+      "Workflow & Process Management",
+      "Operational Monitoring",
+      "Business Process Tracking",
+      "Digital Record Management",
+      "Multi-Department Operations",
+      "Enterprise Workflow Management",
+    ],
+  },
   {
     id: "event-management-application",
     category: "Software",
@@ -269,153 +408,14 @@ export const SOFTWARE_DATA: ProductDetail[] = [
     ],
   },
 
-  {
-    id: "saphal-agri-procurement-handling-logistics",
-    category: "Software",
-    title:
-      "SAPHAL - Agri Procurement, Handling & Logistics Management Software",
+ 
 
-    shortDesc:
-      "Integrated software solution designed to streamline agricultural procurement, handling, inventory, logistics, and supply chain operations through centralized digital management.",
-
-    longDesc:
-      "SAPHAL is an integrated software solution designed to support agricultural procurement, handling, storage, inventory, and logistics operations through a centralized digital platform. The system helps organizations manage procurement activities, monitor material movement, coordinate handling and transportation operations, maintain digital records, and gain better visibility across the agricultural supply chain. By connecting procurement, handling, logistics, and operational workflows, SAPHAL helps improve transparency, coordination, process efficiency, and data-driven decision-making.",
-
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1000",
-
-    gifUrl: "/media/saphal-agri-management.gif",
-
-    videoUrl: "/media/saphal-logistics.mp4",
-
-    gallery: [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000",
-    ],
-
-    features: [
-      "Digital agricultural procurement management",
-      "Procurement workflow and activity monitoring",
-      "Farmer, supplier, and procurement center data management",
-      "Procurement quantity and transaction tracking",
-      "Material handling and movement monitoring",
-      "Inventory and stock visibility",
-      "Warehouse and storage operation management",
-      "Transportation and logistics coordination",
-      "Real-time supply chain visibility",
-      "Vehicle and dispatch tracking",
-      "Digital documentation and record management",
-      "Centralized operational dashboard",
-      "Reports and analytics for informed decision-making",
-      "Improved transparency across procurement and logistics operations",
-      "Streamlined coordination between procurement, handling, storage, and transportation activities",
-    ],
-
-    specifications: {
-      Platform:
-        "Web-Based Agricultural Procurement & Logistics Management Platform",
-      Procurement: "Digital Procurement Workflow and Transaction Management",
-      Handling: "Material Handling and Movement Monitoring",
-      Inventory: "Stock and Inventory Visibility",
-      Storage: "Warehouse and Storage Operations Management",
-      Logistics: "Transportation and Dispatch Coordination",
-      Tracking: "Real-Time Operational and Supply Chain Monitoring",
-      Documentation: "Centralized Digital Records and Documentation",
-      Reporting: "Procurement, Inventory and Logistics Reports",
-      Analytics: "Operational Data and Performance Analytics",
-      Dashboard: "Centralized Management Dashboard",
-      Application: "Agricultural Procurement, Handling, Storage and Logistics",
-    },
-
-    applications: [
-      "Agricultural Procurement",
-      "Food Grain Procurement",
-      "Procurement Centers",
-      "Warehousing & Storage",
-      "Inventory Management",
-      "Agricultural Supply Chain",
-      "Logistics & Transportation",
-      "Material Handling Operations",
-      "Food Distribution Operations",
-      "Government & Cooperative Procurement Operations",
-    ],
-  },
-
-  {
-    id: "workflow-tracer-operational-tracing",
-    category: "Software",
-    title: "Workflow Tracker - Automated Operational Tracing Software",
-
-    shortDesc:
-      "Automated digital platform designed to track, monitor, and manage operational workflows, activities, and processes through centralized real-time visibility.",
-
-    longDesc:
-      "Workflow Tracker is an automated digital platform designed to provide end-to-end visibility into operational workflows and business processes. The platform helps organizations digitally trace activities, monitor process progress, track operational records, and improve coordination across different stages of a workflow. By replacing fragmented manual tracking with centralized digital monitoring, Workflow Tracer enables organizations to improve transparency, operational control, accountability, and data-driven decision-making.",
-
-    image:
-      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000",
-
-    gifUrl: "/media/workflow-tracer.gif",
-
-    videoUrl: "/media/workflow-tracer-demo.mp4",
-
-    gallery: [
-      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    ],
-
-    features: [
-      "Automated digital workflow tracing",
-      "End-to-end operational process monitoring",
-      "Real-time workflow status visibility",
-      "Centralized tracking of operational activities",
-      "Digital record and transaction management",
-      "Process-wise activity monitoring",
-      "Task and workflow progress tracking",
-      "Automated status updates and notifications",
-      "Improved operational transparency and accountability",
-      "Centralized dashboard for workflow monitoring",
-      "Reports and analytics for operational insights",
-      "Historical workflow and activity records",
-      "Reduced dependency on manual tracking and reporting",
-      "Improved coordination between teams and operational stakeholders",
-      "Data-driven decision-making and operational control",
-    ],
-
-    specifications: {
-      Platform: "Web-Based Digital Workflow Tracking Platform",
-      "Workflow Tracking": "Automated End-to-End Operational Tracing",
-      Monitoring: "Real-Time Workflow and Activity Monitoring",
-      "Process Management": "Digital Process and Workflow Management",
-      Records: "Centralized Digital Records and Activity History",
-      Dashboard: "Centralized Operational Monitoring Dashboard",
-      Notifications: "Automated Status Updates and Alerts",
-      Reporting: "Workflow and Operational Performance Reports",
-      Analytics: "Process and Activity-Based Operational Analytics",
-      Visibility: "End-to-End Operational Process Visibility",
-      Application: "Business Workflows, Operations and Process Tracking",
-    },
-
-    applications: [
-      "Government & Public Sector Operations",
-      "Agricultural Procurement Operations",
-      "Supply Chain & Logistics",
-      "Food Grain Operations",
-      "Workflow & Process Management",
-      "Operational Monitoring",
-      "Business Process Tracking",
-      "Digital Record Management",
-      "Multi-Department Operations",
-      "Enterprise Workflow Management",
-    ],
-  },
+  
 
   {
     id: "whatsapp-appointment-order-management",
     category: "Software",
-    title: "WhatsApp-Based Appointment & Order Management System",
+    title: "Order Management System via WhatsApp",
 
     shortDesc:
       "A WhatsApp-based digital management solution designed to simplify appointment booking, order management, customer communication, and business operations through a familiar messaging platform.",
@@ -519,80 +519,8 @@ export const SOFTWARE_DATA: ProductDetail[] = [
       "Family Safety Monitoring",
     ],
   },
-  {
-    id: "enterprise-api-gateway",
-    category: "Software",
-    title: "Enterprise API Gateway",
-    shortDesc:
-      "Robust API solution for seamless integration of tracking data into your existing ERP/CRM.",
-    longDesc:
-      "Bridge the gap between telematics hardware and your business logic. Our Enterprise API Gateway provides a high-throughput, low-latency interface for developers to pull tracking data directly into internal systems like SAP, Salesforce, or custom ERPs.",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000",
-    gifUrl: "/media/dashboard-tracking.gif",
-    videoUrl: "/media/circuit-board.mp4",
-    gallery: [
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000",
-    ],
-    features: [
-      "RESTful API architecture",
-      "Real-time WebSocket streams",
-      "Detailed API documentation",
-      "Usage monitoring and quotas",
-      "Secure OAuth2 authentication",
-    ],
-    specifications: {
-      Protocol: "HTTPS / WSS",
-      "Response Time": "< 100ms",
-      Format: "JSON / XML",
-      Uptime: "99.99% SLA",
-      "Rate Limit": "Scalable based on tier",
-    },
-    applications: [
-      "Software Developers",
-      "Large Enterprises",
-      "Third-party Integrators",
-      "Data Analytics Firms",
-    ],
-  },
-  {
-    id: "smart-geofencing-engine",
-    category: "Software",
-    title: "Smart Geofencing Engine",
-    shortDesc:
-      "Advanced spatial analysis tool for complex boundary management and automated triggers.",
-    longDesc:
-      "Go beyond simple circles. Our Smart Geofencing Engine supports complex polygons, corridor-based geofences, and time-sensitive boundaries. Automatically trigger actions like engine immobilization or SMS alerts when a boundary is crossed.",
-    image:
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=1000",
-    gifUrl: "/media/tracking-animation.gif",
-    videoUrl: "/media/track-fleet.mp4",
-    gallery: [
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=1000",
-    ],
-    features: [
-      "Complex polygon support",
-      "Route corridor geofencing",
-      "Time-of-day constraints",
-      "Automated webhook triggers",
-      "Historical entry/exit logs",
-    ],
-    specifications: {
-      Precision: "Sub-meter spatial analysis",
-      "Max Geofences": "Unlimited",
-      Processing: "Real-time edge computing",
-      "Alert Types": "SMS, Email, Push, Webhook",
-      "Export Format": "KML / GeoJSON",
-    },
-    applications: [
-      "Restricted Zone Monitoring",
-      "Delivery Route Compliance",
-      "Asset Theft Prevention",
-      "Construction Site Management",
-    ],
-  },
+  
+ 
   {
     id: "driver-behavior-ai",
     category: "Software",
@@ -630,41 +558,5 @@ export const SOFTWARE_DATA: ProductDetail[] = [
       "Ride-sharing Platforms",
     ],
   },
-  {
-    id: "predictive-maintenance-portal",
-    category: "Software",
-    title: "Predictive Maintenance Portal",
-    shortDesc:
-      "Proactive vehicle health monitoring to prevent breakdowns and extend asset life.",
-    longDesc:
-      "Stop reacting to breakdowns. Our Predictive Maintenance Portal uses engine diagnostics and mileage data to predict when a vehicle needs service. It tracks engine hours, oil life, and tire wear, sending alerts before issues become critical.",
-    image:
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1000",
-    gifUrl: "/media/gps-tracker-anim.gif",
-    videoUrl: "/media/realtime-tracking.mp4",
-    gallery: [
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1000",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1000",
-    ],
-    features: [
-      "Engine health diagnostics",
-      "Mileage-based service alerts",
-      "Digital service logbooks",
-      "Spare parts inventory tracking",
-      "Total Cost of Ownership (TCO) tools",
-    ],
-    specifications: {
-      "Data Source": "CAN-Bus / OBD-II",
-      "Prediction Accuracy": "> 90%",
-      "Manufacturer Support": "Universal compatibility",
-      "Cloud Sync": "Real-time sync",
-      "User Access": "Multi-role support",
-    },
-    applications: [
-      "Trucking Companies",
-      "Equipment Rental Firms",
-      "Leasing Agencies",
-      "Municipal Fleets",
-    ],
-  },
+ 
 ];

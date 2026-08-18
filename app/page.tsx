@@ -287,28 +287,7 @@ export default function HomePage() {
     return () => window.clearTimeout(timer);
   }, [activeCarouselSlide, isCarouselManuallyPaused]);
 
-  const showPreviousCarouselSlide = () => {
-    setActiveCarouselSlide(
-      (currentSlide) =>
-        (currentSlide - 1 + HOME_CAROUSEL_SLIDES.length) %
-        HOME_CAROUSEL_SLIDES.length,
-    );
-  };
-
-  const showNextCarouselSlide = () => {
-    setActiveCarouselSlide(
-      (currentSlide) => (currentSlide + 1) % HOME_CAROUSEL_SLIDES.length,
-    );
-  };
-
-  const currentCarouselItems = HOME_CAROUSEL_SLIDES[activeCarouselSlide];
-
-  const stats = [
-    { value: 500, label: "Projects Completed", suffix: "+", icon: "Award" },
-    { value: 100, label: "Happy Clients", suffix: "+", icon: "Users" },
-    { value: 10, label: "Years Experience", suffix: "+", icon: "Calendar" },
-    { value: 24, label: "Customer Support", suffix: "/7", icon: "Clock" },
-  ];
+ 
 
   const workflows = [
     {
