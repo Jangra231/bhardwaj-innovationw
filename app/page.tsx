@@ -338,7 +338,9 @@ export default function HomePage() {
       />
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg">
+      <section className="relative min-h-[620px] md:min-h-[660px] xl:min-h-[700px] flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg">
+
+
         {/* Floating particles */}
         <FloatingParticles />
 
@@ -353,13 +355,17 @@ export default function HomePage() {
         </motion.div>
 
         {/* Animated gradient orbs */}
-        <div className="absolute top-20 right-20 w-96 h-96 bg-sky-400/70 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-24 -right-20 sm:-right-8 xl:right-20 w-56 h-56 sm:w-72 sm:h-72 xl:w-96 xl:h-96 bg-sky-400/70 rounded-full blur-3xl animate-float"></div>
+
         <div
-          className="absolute bottom-20 left-20 w-72 h-72 bg-blue-100/60 rounded-full blur-3xl animate-float"
+className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm:h-64 xl:w-72 xl:h-72 bg-blue-100/60 rounded-full blur-3xl animate-float"
+
           style={{ animationDelay: "2s" }}
         ></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 grid lg:grid-cols-2 gap-12 items-center">
+       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16 md:py-20 xl:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
+
+
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -379,7 +385,9 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="min-h-[5.1em] text-4xl md:min-h-[4.2em] md:text-5xl lg:min-h-[4.2em] lg:text-6xl font-extrabold text-white tracking-tight leading-tight"
+             className="min-h-0 text-4xl sm:text-5xl xl:min-h-[4.2em] xl:text-6xl font-extrabold text-white tracking-tight leading-tight"
+
+
             >
               Smart{" "}
               <AnimatedText
@@ -411,7 +419,7 @@ export default function HomePage() {
             >
               <Link
                 href="/software"
-                className="px-8 py-4 bg-sky-600 hover:bg-sky-500 transition-all duration-300 text-white font-medium rounded-xl shadow-lg shadow-sky-500/20 hover:scale-[1.03] active:scale-[0.98] cursor-pointer flex items-center gap-2 group relative overflow-hidden"
+                className=" px-8 py-4 bg-sky-600 hover:bg-sky-500 transition-all duration-300 text-white font-medium rounded-xl shadow-lg shadow-sky-500/20 hover:scale-[1.03] active:scale-[0.98] cursor-pointer flex items-center gap-2 group relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   Explore Software
@@ -421,7 +429,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/contact"
-                className="px-8 py-4 bg-slate-800/80 backdrop-blur-sm hover:bg-slate-700 transition-all duration-300 text-slate-200 border border-slate-700 font-medium rounded-xl hover:scale-[1.03] active:scale-[0.98] cursor-pointer relative overflow-hidden group"
+                className=" px-8 py-4 bg-slate-800/80 backdrop-blur-sm hover:bg-slate-700 transition-all duration-300 text-slate-200 border border-slate-700 font-medium rounded-xl hover:scale-[1.03] active:scale-[0.98] cursor-pointer relative overflow-hidden group"
               >
                 <span className="relative z-10">Request Demo</span>
                 <div className="absolute inset-0 bg-linear-to-r from-slate-700 to-slate-800 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -434,13 +442,15 @@ export default function HomePage() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-            className="hidden lg:block relative"
+            className="relative block w-full max-w-md mx-auto lg:ml-auto"
+
           >
             <div
               className="absolute -inset-2 rounded-2xl bg-linear-to-r from-sky-500 via-blue-500 to-cyan-500 opacity-20 blur-2xl animate-pulse"
               style={{ animationDuration: "3s" }}
             ></div>
-            <div className="relative bg-white/95 backdrop-blur-xl border border-slate-200 p-5 rounded-2xl shadow-2xl shadow-slate-200/70 max-w-md ml-auto text-slate-700 space-y-4 overflow-hidden gradient-border transition-transform duration-300 hover:-translate-y-1 hover:shadow-sky-200/60">
+            <div className="relative w-full max-w-md bg-white/95 backdrop-blur-xl border border-slate-200 p-4 sm:p-5 rounded-2xl shadow-2xl shadow-slate-200/70 mx-auto text-slate-700 space-y-4 overflow-hidden gradient-border transition-transform duration-300 hover:-translate-y-1 hover:shadow-sky-200/60"
+>
               {/* Browser frame */}
               <div className="flex items-center gap-2 pb-3 border-b border-slate-200">
                 <div className="flex gap-1.5">
@@ -470,7 +480,8 @@ export default function HomePage() {
                   muted
                   loop
                   playsInline
-                  className="w-full h-48 object-cover"
+                  className="w-full h-40 sm:h-48 lg:h-52 object-cover"
+
                 >
                   <source src="/media/Hero.mp4" type="video/mp4" />
                 </video>
@@ -631,14 +642,16 @@ export default function HomePage() {
       {/* VIDEO SHOWCASE SECTION  */}
       <section className="relative py-0 overflow-hidden bg-slate-950">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-0">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-0">
+
             {/* Left: Video */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative h-125 overflow-hidden rounded-l-2xl"
+              className="relative h-72 sm:h-96 xl:h-125 overflow-hidden rounded-t-2xl xl:rounded-l-2xl xl:rounded-tr-none"
+
             >
               <div className="absolute inset-0 z-10 bg-linear-to-r from-transparent via-transparent to-slate-950/30"></div>
               <div className="absolute inset-0 z-10 bg-linear-to-t from-slate-950/50 to-transparent"></div>
@@ -662,7 +675,8 @@ export default function HomePage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-slate-950 p-12 md:p-16 flex flex-col justify-center rounded-r-2xl border-l border-slate-800 space-y-6"
+             className="bg-slate-950 p-8 sm:p-10 xl:p-16 flex flex-col justify-center rounded-b-2xl xl:rounded-r-2xl xl:rounded-bl-none border-l-0 xl:border-l border-slate-800 space-y-6"
+
             >
               <span className="text-xs font-bold tracking-widest uppercase text-sky-400">
                 Platform Showcase
@@ -722,7 +736,8 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-5 gap-6 text-left relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 text-left relative">
+
             {workflows.map((flow, i) => (
               <motion.div
                 key={i}

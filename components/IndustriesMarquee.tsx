@@ -101,7 +101,7 @@ export default function IndustriesMarquee() {
           ({ name, logoName, logo }, index) => (
             <div
               key={`${name}-${index}`}
-              className="group mx-8 flex shrink-0 items-center gap-4 rounded-xl border border-slate-100 bg-slate-50 px-6 py-4 transition-colors transition-shadow duration-300 hover:border-sky-300 hover:bg-white hover:shadow-xl hover:shadow-sky-100/80 focus:border-sky-400 focus:bg-white focus:shadow-xl focus:shadow-sky-100/80 focus:outline-2 focus:outline-offset-2 focus:outline-sky-500"
+              className="group mx-8 flex shrink-0 items-center gap-4 rounded-xl border border-slate-100 bg-slate-50 px-6 py-4 transition-colors duration-300 hover:border-sky-300 hover:bg-white hover:shadow-xl hover:shadow-sky-100/80 focus:border-sky-400 focus:bg-white focus:shadow-xl focus:shadow-sky-100/80 focus:outline-2 focus:outline-offset-2 focus:outline-sky-500"
               tabIndex={0}
               aria-label={`${name} logo and organization`}
             >

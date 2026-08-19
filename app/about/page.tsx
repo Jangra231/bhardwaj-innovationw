@@ -161,7 +161,8 @@ export default function AboutPage() {
             <span className="h-2 w-2 animate-pulse rounded-full bg-sky-500" />
             About Us
           </span>
-          <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white">
+
             Pioneering Telemetry & <br />
             <span className="bg-linear-to-r from-sky-600 to-blue-700 bg-clip-text text-transparent">
               IoT Innovation
