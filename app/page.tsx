@@ -239,23 +239,23 @@ const FloatingParticles = () => {
 // };
 
 // --- Video Background Component ---
-const VideoBackground = ({
-  src,
-  className = "",
-}: {
-  src: string;
-  className?: string;
-}) => (
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className={`w-full h-full object-cover ${className}`}
-  >
-    <source src={src} type="video/mp4" />
-  </video>
-);
+// const VideoBackground = ({
+//   src,
+//   className = "",
+// }: {
+//   src: string;
+//   className?: string;
+// }) => (
+//   <video
+//     autoPlay
+//     muted
+//     loop
+//     playsInline
+//     className={`w-full h-full object-cover ${className}`}
+//   >
+//     <source src={src} type="video/mp4" />
+//   </video>
+// );
 
 export default function HomePage() {
   const { scrollYProgress } = useScroll();
@@ -363,14 +363,16 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
           style={{ animationDelay: "2s" }}
         ></div>
 
-       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-16 md:py-20 xl:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
+       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-16 md:pt-36 md:pb-20 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 items-center">
+
 
 
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="space-y-8 text-left"
+            className="mx-auto w-full max-w-2xl space-y-8 text-center lg:mx-0 lg:text-left"
+
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -415,7 +417,8 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="flex flex-wrap gap-4 pt-4"
+              className="flex flex-wrap justify-center gap-4 pt-4 lg:justify-start"
+
             >
               <Link
                 href="/software"
@@ -444,12 +447,13 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
             className="relative block w-full max-w-md mx-auto lg:ml-auto"
 
+
           >
             <div
               className="absolute -inset-2 rounded-2xl bg-linear-to-r from-sky-500 via-blue-500 to-cyan-500 opacity-20 blur-2xl animate-pulse"
               style={{ animationDuration: "3s" }}
             ></div>
-            <div className="relative w-full max-w-md bg-white/95 backdrop-blur-xl border border-slate-200 p-4 sm:p-5 rounded-2xl shadow-2xl shadow-slate-200/70 mx-auto text-slate-700 space-y-4 overflow-hidden gradient-border transition-transform duration-300 hover:-translate-y-1 hover:shadow-sky-200/60"
+            <div className="relative w-full max-w-md mx-auto lg:ml-auto bg-white/95 backdrop-blur-xl border border-slate-200 p-4 sm:p-5 rounded-2xl shadow-2xl shadow-slate-200/70 text-slate-700 space-y-4 overflow-hidden gradient-border transition-transform duration-300 hover:-translate-y-1 hover:shadow-sky-200/60"
 >
               {/* Browser frame */}
               <div className="flex items-center gap-2 pb-3 border-b border-slate-200">
