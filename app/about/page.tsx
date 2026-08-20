@@ -599,21 +599,24 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 text-left">
+          <div className="grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 items-stretch">
             {teamMembers.map((member, i) => (
               <motion.div
                 key={i}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 shadow-sm transition-all duration-300 hover:border-sky-200 hover:shadow-xl"
+                className="group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 shadow-sm transition-all duration-300 hover:border-sky-200 hover:shadow-xl"
               >
                 <div className={`h-2 bg-linear-to-r ${member.gradient}`} />
-                <div className="space-y-5 p-6">
-                  <div className="relative flex h-44 w-full items-center justify-center overflow-hidden rounded-2xl bg-white text-sky-600 shadow-sm transition-transform duration-300 group-hover:scale-[1.02]">
+                <div className="flex flex-1 flex-col space-y-5 p-5 sm:p-6">
+                  <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden rounded-2xl bg-slate-100 p-1.5 text-sky-600 shadow-sm transition-transform duration-300 group-hover:scale-[1.02] sm:aspect-[4/3] md:aspect-[5/4] xl:aspect-[4/5]"
+>
+
                     {member.image ? (
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain object-center"
+
                       />
                     ) : (
                       <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-linear-to-br from-slate-100 via-white to-sky-50">
@@ -623,15 +626,15 @@ export default function AboutPage() {
                       </div>
                     )}
                   </div>
-                  <div className="space-y-2">
-                    <h4 className="text-base font-bold text-slate-900 group-hover:text-sky-600 transition-colors">
+                  <div className="min-w-0 space-y-2">
+                    <h4 className="break-words text-base font-bold leading-snug text-slate-900 transition-colors group-hover:text-sky-600">
                       {member.name}
                     </h4>
-                    <span className="block text-xs font-semibold uppercase tracking-wider text-sky-600">
+                    <span className="block break-words text-xs font-semibold uppercase leading-relaxed tracking-wider text-sky-600">
                       {member.role}
                     </span>
                   </div>
-                  <p className="border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
+                  <p className="mt-auto break-words border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
                     {member.bio}
                   </p>
                 </div>

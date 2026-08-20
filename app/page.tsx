@@ -91,7 +91,7 @@ const AnimatedText = ({
 
   return (
     <span
-      className={`inline-block w-[10ch] whitespace-nowrap ${className ?? ""}`}
+      className={`inline-block w-[11ch] whitespace-nowrap ${className ?? ""}`}
     >
       {displayText || "\u00A0"}
     </span>
@@ -371,18 +371,10 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="mx-auto w-full max-w-2xl space-y-8 text-center lg:mx-0 lg:text-left"
+            className="mx-auto w-full max-w-2xl space-y-6 text-center lg:mx-0 lg:text-left"
 
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.1, duration: 0.4 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-sm font-semibold tracking-wide shadow-sm animate-pulse-glow"
-            >
-              <span className="flex h-2 w-2 rounded-full bg-sky-400 animate-ping"></span>
-              Enterprise IoT & Telematics Leaders
-            </motion.div>
+            
             <motion.h1
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -391,12 +383,15 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
 
 
             >
-              Smart{" "}
-              <AnimatedText
-                words={heroWords}
-                className="text-transparent bg-clip-text bg-linear-to-r from-sky-400 to-sky-600"
-              />{" "}
+                            <span className="whitespace-nowrap">
+                Smart{" "}
+                <AnimatedText
+                  words={heroWords}
+                  className="text-transparent bg-clip-text bg-linear-to-r from-sky-400 to-sky-600"
+                />
+              </span>{" "}
               Solutions for a{" "}
+
               <span className="text-transparent bg-clip-text bg-linear-to-r from-sky-400 to-sky-600">
                 Connected
               </span>{" "}
