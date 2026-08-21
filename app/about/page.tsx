@@ -127,7 +127,7 @@ export default function AboutPage() {
   return (
     <div className="relative">
       {/* HERO SECTION with Video Background */}
-      <section className="group relative overflow-hidden border-b border-slate-800 bg-slate-950 pt-24 pb-16 text-white md:pt-28 md:pb-20 lg:pt-24">
+      <section className="group relative overflow-hidden border-b border-slate-800 bg-slate-950 pt-24 pb-10 text-white md:pt-28 md:pb-12 lg:pt-24">
         {/* Existing hero image and overlays; styling only */}
         <div className="absolute inset-0 z-0">
           <img
@@ -162,7 +162,6 @@ export default function AboutPage() {
             About Us
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white">
-
             Pioneering Telemetry & <br />
             <span className="bg-linear-to-r from-sky-600 to-blue-700 bg-clip-text text-transparent">
               IoT Innovation
@@ -179,7 +178,7 @@ export default function AboutPage() {
       {/* =========================
     RIGHT - VISUAL PANEL
 ========================= */}
-      <div className="relative">
+      <div className="relative mt-2 md:mt-1">
         {/* Main Image Card */}
         <div
           className="
@@ -366,7 +365,7 @@ export default function AboutPage() {
       </div>
 
       {/* OUR STORY SECTION with Video */}
-      <section className="py-12 bg-white md:py-16">
+      <section className="py-5 bg-white md:py-7">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6 text-left">
             <span className="text-xs font-bold tracking-widest uppercase text-sky-600">
@@ -459,7 +458,7 @@ export default function AboutPage() {
       </section>
 
       {/* INTERACTIVE MISSION & VISION */}
-      <section className="relative overflow-hidden py-12 md:py-16">
+      <section className="relative overflow-hidden py-5 md:py-7">
         <div className="absolute inset-0 z-0">
           <img
             src="/media/carousel/vision-mission.jpg"
@@ -584,7 +583,7 @@ export default function AboutPage() {
       </section>
 
       {/* LEADERSHIP TEAM */}
-      <section className="py-12 bg-white md:py-16">
+      <section className="py-5 bg-white md:py-7">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-8 md:space-y-10">
           <div className="space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-bold tracking-widest uppercase text-sky-600">
@@ -608,15 +607,12 @@ export default function AboutPage() {
               >
                 <div className={`h-2 bg-linear-to-r ${member.gradient}`} />
                 <div className="flex flex-1 flex-col space-y-5 p-5 sm:p-6">
-                  <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden rounded-2xl bg-slate-100 p-1.5 text-sky-600 shadow-sm transition-transform duration-300 group-hover:scale-[1.02] sm:aspect-[4/3] md:aspect-[5/4] xl:aspect-[4/5]"
->
-
+                  <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden rounded-2xl bg-slate-100 p-1.5 text-sky-600 shadow-sm transition-transform duration-300 group-hover:scale-[1.02] sm:aspect-[4/3] md:aspect-[5/4] xl:aspect-[4/5]">
                     {member.image ? (
                       <img
                         src={member.image}
                         alt={member.name}
                         className="h-full w-full object-contain object-center"
-
                       />
                     ) : (
                       <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-linear-to-br from-slate-100 via-white to-sky-50">
@@ -645,7 +641,7 @@ export default function AboutPage() {
       </section>
 
       {/* CORE VALUES with GIF Animation */}
-      <section className="border-y border-slate-800 bg-slate-950 py-12 text-white md:py-16">
+      <section className="border-y border-slate-800 bg-slate-950 py-5 text-white md:py-7">
         <div className="mx-auto max-w-7xl space-y-8 px-6 text-center md:space-y-10">
           <div className="space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-bold uppercase tracking-widest text-sky-300">
@@ -685,7 +681,7 @@ export default function AboutPage() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-12 bg-white overflow-hidden md:py-16">
+      <section className="py-5 bg-white overflow-hidden md:py-7">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header with Video Background */}
           <motion.div

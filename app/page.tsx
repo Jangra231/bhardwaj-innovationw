@@ -329,7 +329,7 @@ export default function HomePage() {
       
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[560px] md:min-h-[600px] xl:min-h-[640px] flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg">
+      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg sm:min-h-[680px] lg:min-h-[760px] xl:min-h-[800px] 2xl:min-h-[calc(100svh-4rem)]">
 
 
         {/* Floating particles */}
@@ -611,9 +611,9 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
       <AccessibleProductsSection />
 
       {/* VIDEO SHOWCASE SECTION  */}
-      <section className="relative py-0 overflow-hidden bg-slate-950">
+      <section className="relative overflow-hidden bg-slate-950">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-0">
+          <div className="grid items-stretch gap-0 grid-cols-1 xl:grid-cols-2">
 
             {/* Left: Video */}
             <motion.div
@@ -621,7 +621,7 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative h-72 sm:h-96 xl:h-125 overflow-hidden rounded-t-2xl xl:rounded-l-2xl xl:rounded-tr-none"
+              className="relative h-full min-h-[360px] overflow-hidden rounded-t-2xl xl:rounded-l-2xl xl:rounded-tr-none"
 
             >
               <div className="absolute inset-0 z-10 bg-linear-to-r from-transparent via-transparent to-slate-950/30"></div>
@@ -646,7 +646,7 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-             className="bg-slate-950 p-8 sm:p-10 xl:p-16 flex flex-col justify-center rounded-b-2xl xl:rounded-r-2xl xl:rounded-bl-none border-l-0 xl:border-l border-slate-800 space-y-6"
+             className="flex h-full flex-col justify-center space-y-6 rounded-b-2xl border-l-0 bg-slate-950 p-8 sm:p-10 xl:rounded-r-2xl xl:rounded-bl-none xl:border-l xl:border-slate-800 xl:p-12"
 
             >
               <span className="text-xs font-bold tracking-widest uppercase text-sky-400">
@@ -685,7 +685,7 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
       <IndustriesMarquee />
 
       {/* 5. HOW IT WORKS */}
-      <section className="py-12 md:py-16 bg-slate-50 overflow-hidden dot-pattern">
+      <section className="py-5 md:py-7 bg-slate-50 overflow-hidden dot-pattern">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-8 md:space-y-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

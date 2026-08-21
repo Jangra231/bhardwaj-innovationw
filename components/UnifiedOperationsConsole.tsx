@@ -4,32 +4,21 @@ import {
   Activity,
   ArrowUpRight,
   Award,
-  CalendarDays,
   CheckCircle2,
   Clock3,
-  Gauge,
-  RadioTower,
   Users,
 } from "lucide-react";
 import { motion } from "motion/react";
 
 const companyMetrics = [
   { label: "National Compliance Certs", value: "10+", icon: CheckCircle2 },
-  { label: "Real-time Telemetry Uptime", value: "99.9%", icon: RadioTower },
-  { label: "Active Tracking Nodes", value: "8K+", icon: Activity },
-  { label: "Kilometers Monitored", value: "5M+", icon: Gauge },
-] as const;
-
-const trackingMetrics = [
-  { label: "Years Experience", value: "2+", icon: CalendarDays },
+  { label: "B2B Clients", value: "100+", icon: Users },
   { label: "Active Projects", value: "15+", icon: Award },
-  { label: "B2B Clients", value: "200+", icon: Users },
+  { label: "Active Tracking Nodes", value: "8K+", icon: Activity },
   { label: "Customer Support", value: "24/7", icon: Clock3 },
 ] as const;
 
-type Metric =
-  | (typeof companyMetrics)[number]
-  | (typeof trackingMetrics)[number];
+type Metric = (typeof companyMetrics)[number];
 
 const MetricTile = ({ item, index }: { item: Metric; index: number }) => {
   const Icon = item.icon;
@@ -53,7 +42,7 @@ const MetricTile = ({ item, index }: { item: Metric; index: number }) => {
         className="absolute inset-x-1 bottom-[-4px] top-1 rounded-xl bg-sky-950/70 opacity-70 blur-sm transition-all duration-300 group-hover:inset-x-0 group-hover:bottom-[-6px] group-hover:opacity-100"
       />
 
-      <div className="relative flex min-h-[68px] items-center gap-2 overflow-hidden rounded-xl border border-white/15 bg-linear-to-br from-white/95 via-white/85 to-sky-100/75 px-2.5 py-2 text-slate-900 shadow-[0_6px_14px_rgba(2,24,52,0.22)] transition-all duration-300 group-hover:border-sky-300 group-hover:from-sky-500 group-hover:via-sky-600 group-hover:to-blue-700 group-hover:text-white group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-sky-300/60 sm:gap-2.5 sm:px-3">
+      <div className="relative flex min-h-[68px] items-center gap-1.5 overflow-hidden rounded-xl border border-white/15 bg-linear-to-br from-white/95 via-white/85 to-sky-100/75 px-2 py-2 text-slate-900 shadow-[0_6px_14px_rgba(2,24,52,0.22)] transition-all duration-300 group-hover:border-sky-300 group-hover:from-sky-500 group-hover:via-sky-600 group-hover:to-blue-700 group-hover:text-white group-focus-visible:outline-none group-focus-visible:ring-2 group-focus-visible:ring-sky-300/60 sm:gap-2.5 sm:px-3">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -right-7 -top-8 h-16 w-16 rounded-full bg-sky-300/30 blur-xl transition-transform duration-500 group-hover:scale-150"
@@ -67,7 +56,7 @@ const MetricTile = ({ item, index }: { item: Metric; index: number }) => {
           <p className="text-lg font-black tracking-tight transition-colors duration-300 sm:text-xl">
             {item.value}
           </p>
-          <p className="mt-1 whitespace-nowrap text-[8px] font-bold uppercase leading-tight tracking-[0.08em] text-slate-500 transition-colors duration-300 group-hover:text-white/85 sm:text-[9px]">
+          <p className="mt-1 whitespace-normal text-[8px] font-bold uppercase leading-[1.1] tracking-[0.06em] text-slate-500 transition-colors duration-300 group-hover:text-white/85 sm:whitespace-nowrap sm:tracking-[0.08em] sm:text-[9px]">
             {item.label}
           </p>
         </div>
@@ -81,19 +70,10 @@ const MetricTile = ({ item, index }: { item: Metric; index: number }) => {
   );
 };
 
-const ConnectionRail = () => (
-  <div className="relative my-2 flex h-3 items-center justify-center" aria-hidden="true">
-    <div className="absolute left-0 right-0 h-px bg-linear-to-r from-transparent via-sky-400/60 to-transparent" />
-    <div className="relative h-2.5 w-2.5 rounded-full border border-sky-300/60 bg-slate-950 shadow-[0_0_10px_rgba(56,189,248,0.55)]">
-      <div className="absolute inset-0.5 rounded-full bg-sky-300 animate-pulse" />
-    </div>
-  </div>
-);
-
 export default function UnifiedOperationsConsole() {
   return (
     <section
-      aria-label="Bhardwaj Innovations company and fleet metrics"
+      aria-label="Bhardwaj Innovations company metrics"
       className="relative overflow-hidden border-y border-slate-800 bg-slate-950 py-3 text-white md:py-4"
     >
       <div className="pointer-events-none absolute inset-0">
@@ -103,32 +83,12 @@ export default function UnifiedOperationsConsole() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 [perspective:1100px]">
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 xl:gap-2.5">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5 xl:gap-2.5">
           {companyMetrics.map((item, index) => (
             <MetricTile key={item.label} item={item} index={index} />
-          ))}
-        </div>
-
-        <ConnectionRail />
-
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 xl:gap-2.5">
-          {trackingMetrics.map((item, index) => (
-            <MetricTile
-              key={item.label}
-              item={item}
-              index={index + companyMetrics.length}
-            />
           ))}
         </div>
       </div>
     </section>
   );
 }
-
-/*
-  Integration:
-  Replace the contents of components/UnifiedOperationsConsole.tsx with this file.
-  The existing import in app/page.tsx remains unchanged:
-
-  import UnifiedOperationsConsole from "@/components/UnifiedOperationsConsole";
-*/
