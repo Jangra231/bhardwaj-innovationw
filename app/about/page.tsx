@@ -127,7 +127,7 @@ export default function AboutPage() {
   return (
     <div className="relative">
       {/* HERO SECTION with Video Background */}
-      <section className="group relative overflow-hidden border-b border-slate-800 bg-slate-950 py-24 text-white">
+      <section className="group relative overflow-hidden border-b border-slate-800 bg-slate-950 pt-24 pb-16 text-white md:pt-28 md:pb-20 lg:pt-24">
         {/* Existing hero image and overlays; styling only */}
         <div className="absolute inset-0 z-0">
           <img
@@ -366,7 +366,7 @@ export default function AboutPage() {
       </div>
 
       {/* OUR STORY SECTION with Video */}
-      <section className="py-24 bg-white">
+      <section className="py-12 bg-white md:py-16">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6 text-left">
             <span className="text-xs font-bold tracking-widest uppercase text-sky-600">
@@ -459,7 +459,7 @@ export default function AboutPage() {
       </section>
 
       {/* INTERACTIVE MISSION & VISION */}
-      <section className="relative overflow-hidden py-22">
+      <section className="relative overflow-hidden py-12 md:py-16">
         <div className="absolute inset-0 z-0">
           <img
             src="/media/carousel/vision-mission.jpg"
@@ -584,8 +584,8 @@ export default function AboutPage() {
       </section>
 
       {/* LEADERSHIP TEAM */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center space-y-16">
+      <section className="py-12 bg-white md:py-16">
+        <div className="max-w-7xl mx-auto px-6 text-center space-y-8 md:space-y-10">
           <div className="space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-bold tracking-widest uppercase text-sky-600">
               Leadership Team
@@ -645,8 +645,8 @@ export default function AboutPage() {
       </section>
 
       {/* CORE VALUES with GIF Animation */}
-      <section className="border-y border-slate-800 bg-slate-950 py-24 text-white">
-        <div className="mx-auto max-w-7xl space-y-16 px-6 text-center">
+      <section className="border-y border-slate-800 bg-slate-950 py-12 text-white md:py-16">
+        <div className="mx-auto max-w-7xl space-y-8 px-6 text-center md:space-y-10">
           <div className="space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-bold uppercase tracking-widest text-sky-300">
               The Blueprint
@@ -685,7 +685,7 @@ export default function AboutPage() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-12 bg-white overflow-hidden md:py-16">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header with Video Background */}
           <motion.div
@@ -693,7 +693,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-center space-y-6 mb-16"
+            className="mb-8 space-y-6 text-center md:mb-10"
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-600 text-xs font-bold uppercase tracking-widest">
               <Lucide.Award className="h-4 w-4" />

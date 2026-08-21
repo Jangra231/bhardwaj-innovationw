@@ -265,11 +265,11 @@ export default function AccessibleProductsSection() {
   return (
     <section
       id="products-carousel"
-      className="overflow-hidden bg-slate-50 py-24 dot-pattern"
+      className="overflow-hidden bg-slate-50 py-12 md:py-16 dot-pattern"
       aria-labelledby="products-carousel-heading"
     >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto mb-10 max-w-3xl text-center">
+        <div className="mx-auto mb-6 max-w-3xl text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-sky-600">
             Our Products
           </span>
@@ -318,7 +318,7 @@ export default function AccessibleProductsSection() {
           >
             <div
               ref={trackRef}
-              className="flex w-max flex-nowrap gap-5 py-2"
+              className="flex w-max flex-nowrap gap-4 py-1"
               style={{ willChange: "transform" }}
             >
               {repeatedItems.map((entry, cardIndex) => {
@@ -382,7 +382,7 @@ export default function AccessibleProductsSection() {
             </div>
           </div>
 
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-2" role="group" aria-label="Products carousel controls">
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-2" role="group" aria-label="Products carousel controls">
             <button
               type="button"
               onClick={() => moveToIndex(activeIndex - 1)}

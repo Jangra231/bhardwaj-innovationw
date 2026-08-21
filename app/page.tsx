@@ -326,19 +326,10 @@ export default function HomePage() {
   return (
     <div className="relative" onMouseMove={handleMouseMove}>
       {/* Cursor Glow Effect */}
-      <motion.div
-        className="fixed w-75 h-75 rounded-full pointer-events-none z-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
-        style={{
-          left: springX,
-          top: springY,
-          transform: "translate(-50%, -50%)",
-          background:
-            "radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%)",
-        }}
-      />
+      
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[620px] md:min-h-[660px] xl:min-h-[700px] flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg">
+      <section className="relative min-h-[560px] md:min-h-[600px] xl:min-h-[640px] flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg">
 
 
         {/* Floating particles */}
@@ -363,7 +354,7 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
           style={{ animationDelay: "2s" }}
         ></div>
 
-       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-16 md:pt-36 md:pb-20 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 items-center">
+       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-24 pb-2 md:pt-28 md:pb-4 lg:pt-24 lg:pb-2 grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 items-center">
 
 
 
@@ -607,29 +598,10 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 0.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 rounded-full border-2 border-slate-500/30 flex items-start justify-center pt-2"
-          >
-            <motion.div
-              animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="w-1.5 h-1.5 rounded-full bg-sky-400"
-            />
-          </motion.div>
-        </motion.div>
+        
       </section>
 
       {/* 2. UNIFIED OPERATIONS CONSOLE SECTION */}
-
       <UnifiedOperationsConsole />
 
       {/* Logo Marquee */}
@@ -713,8 +685,8 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
       <IndustriesMarquee />
 
       {/* 5. HOW IT WORKS */}
-      <section className="py-24 bg-slate-50 overflow-hidden dot-pattern">
-        <div className="max-w-7xl mx-auto px-6 text-center space-y-16">
+      <section className="py-12 md:py-16 bg-slate-50 overflow-hidden dot-pattern">
+        <div className="max-w-7xl mx-auto px-6 text-center space-y-8 md:space-y-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -735,7 +707,7 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 text-left relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 text-left relative">
 
             {workflows.map((flow, i) => (
               <motion.div
@@ -745,7 +717,7 @@ className="absolute bottom-16 -left-16 sm:left-8 xl:left-20 w-48 h-48 sm:w-64 sm
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 whileHover={{ y: -6, scale: 1.03 }}
-                className="relative bg-white rounded-2xl border border-slate-100 p-6 space-y-4 hover:shadow-lg hover:border-sky-100 transition-all duration-300 cursor-pointer"
+                className="relative bg-white rounded-2xl border border-slate-100 p-4 space-y-3 hover:shadow-lg hover:border-sky-100 transition-all duration-300 cursor-pointer"
               >
                 <span className="text-3xl font-black text-sky-200 group-hover:text-sky-500 transition-colors font-mono block">
                   {flow.step}
