@@ -329,7 +329,7 @@ export default function HomePage() {
       
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg sm:min-h-[680px] lg:min-h-[760px] xl:min-h-[800px] 2xl:min-h-[calc(100svh-4rem)]">
+      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-950 text-white grid-bg sm:min-h-[680px] lg:min-h-[760px] xl:min-h-screen 2xl:min-h-screen">
 
 
         {/* Floating particles */}
